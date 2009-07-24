@@ -20,6 +20,7 @@ apt-get install -y cms+dqmgui+$DQMV
 
 cd $DEV_AREA
 export CVSROOT=:pserver:anonymous@cmscvs.cern.ch:/cvs/CMSSW
+cvs login
 cvs -Q co -r ONLINE_CONFIG_INTEGRATION -d config CMSSW/DQM/Integration/config
 cvs -Q co -r ONLINE_CONFIG_INTEGRATION -d style CMSSW/DQM/RenderPlugins/src
 
